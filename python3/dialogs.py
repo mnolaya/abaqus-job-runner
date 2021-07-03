@@ -35,6 +35,7 @@ class configure_abaqus:
     """
 
     ini_file = 'abaqus_jobrun_configuration.ini'
+    max_recents = 10
 
     def __init__(self):
         self.config = configparser.ConfigParser()
@@ -43,15 +44,64 @@ class configure_abaqus:
         if file_list is not list: file_list = [file_list]
         section = 'RECENT-JOBS'
         config = self.config
-        config[section] = {
-            'Recent 1': {
-                'Input files': file_list,
-                'Solver': 'iCure'
-            }
-        }
-        print(config)
-        with open(self.ini_file, 'w') as f:
-            config.write(f)
+
+        # Read config file and check for existence of section.
+
+        # Set first recent option in config.
+        config.read(self.ini_file)
+        if config.has_section(section): 
+            recents = config.options(section)
+            num_recents = len(recents)
+            # recents = recents[0:-1]
+            if num_recents < self.max_recents:
+                recents = ["Recent {num}".format(num=(n + 1)) for n in range(1, num_recents)]
+
+
+
+            # if num_recents < self.max_recents:
+            #     last_recent = num_recents + 1
+            #     last_recent = "Recent {num}".format(num=last_recent)
+
+            # elif num_recents == self.max_recents:
+            #     last_recent = "Recent {num}".format(num=self.max_recents)
+
+            # for 
+
+
+        
+
+        # else:
+        #     last_recent = "Recent 1"
+
+            # # Remove last recent and add most recent to beginning of options, and push others down.
+            # if num_recents == self.max_recents:
+            #     recent_no = self.max_recents
+            #     # recents = recents[1:]
+
+            # # Otherwise, just add most recent to begging of options and push others down.
+            # else:
+            #     recent_no = num_recents + 1
+
+        print(recents)
+        print(last_recent)
+
+            # print(recent_no)
+            # for opt in config.options(section): print(opt)
+            #     print(opt)
+            # print('check')
+            # print(config.options(section))
+
+        # config
+
+        # config[section] = {
+        #     recent_no: {
+        #         'Input files': file_list,
+        #         'Solver': 'iCure'
+        #     }
+        # }
+        # # print(config)
+        # with open(self.ini_file, 'w') as f:
+        #     config.write(f)
 
     # def 
 
@@ -74,7 +124,13 @@ if __name__ == "__main__":
 
     config_aba = configure_abaqus()
     config_aba.save_selected_jobs(file_list=inp_files)
-    
+
+    # test = [1, 2, 3]
+    # print(test)
+    # test = test[1:]
+    # print(test)
+    # test.append(5)
+    # print(test)    
 
 
 
