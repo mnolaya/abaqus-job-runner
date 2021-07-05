@@ -1,8 +1,8 @@
 import os
-
+import configparser
 import tkinter as tk
 import tkinter.filedialog as tkdialogs
-import configparser
+
 
 class dialogs:
 
@@ -65,10 +65,7 @@ class configure_abaqus:
             # elif num_recents == self.max_recents:
             #     last_recent = "Recent {num}".format(num=self.max_recents)
 
-            # for 
-
-
-        
+            # for       
 
         # else:
         #     last_recent = "Recent 1"
@@ -81,9 +78,6 @@ class configure_abaqus:
             # # Otherwise, just add most recent to begging of options and push others down.
             # else:
             #     recent_no = num_recents + 1
-
-        print(recents)
-        print(last_recent)
 
             # print(recent_no)
             # for opt in config.options(section): print(opt)
