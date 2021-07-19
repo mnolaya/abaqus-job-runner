@@ -1,7 +1,7 @@
 {
     "RECENT-JOBS": {
         "Recent 1": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -11,10 +11,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:37:34"
         },
-        "Recent 2": {
-            "cmds": [
+        "recent 2": {
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -24,10 +24,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:37:22"
         },
-        "Recent 3": {
-            "cmds": [
+        "recent 3": {
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -37,10 +37,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:37:12"
         },
         "recent 4": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -50,10 +50,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:37:02"
         },
         "recent 5": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -63,10 +63,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:36:47"
         },
         "recent 6": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -76,10 +76,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:36:35"
         },
         "recent 7": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -89,10 +89,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:36:26"
         },
         "recent 8": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -102,10 +102,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:36:19"
         },
         "recent 9": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -115,10 +115,10 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:36:10"
         },
         "recent 10": {
-            "cmds": [
+            "cmd": [
                 "abaqus inter job=test_inp1 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp1.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp2 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp2.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
                 "abaqus inter job=test_inp3 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp3.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON",
@@ -128,7 +128,7 @@
                 "abaqus inter job=test_inp7 input=C:\\Users\\micha\\Google Drive\\coding\\projects\\abaqus-job-runner\\python3\\test_inp7.inp user=C:\\Users\\micha\\Google Drive\\PhD\\06-code\\process_model\\dev_branch\\source\\curing\\curing_main.for double=both ask_delete=ON"
             ],
             "date": "2021-07-09",
-            "time": "16:25:26"
+            "time": "16:35:55"
         }
     }
 }
