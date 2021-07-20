@@ -18,30 +18,34 @@ class configure_runner:
     __section_names = {
         'dirs': 'default directories',
         'subs': 'default subroutines'
-    }
-    
+    }    
 
     def __init__(self, config_file=__json_file):
         self.check_json_exist(config_file=config_file)
     
-    # Create config .json if one doesn't already exist.
+    # Create config .json if one doesn't already exist, get config if it does.
     def check_json_exist(self, config_file=__json_file):
-        if not os.path.isfile(config_file): self.write_json(config_file=config_file)
+        if not os.path.isfile(config_file): 
+            self.write_json(config_file=config_file)
+        else:
+            self.read_json(config_file=config_file)
 
     # Load configuration from .json.
     def read_json(self, config_file=__json_file):
         with open(config_file, 'r') as f:
-            config = json.load(f, object_pairs_hook=collections.OrderedDict)
-        return config
+            self.config = json.load(f, object_pairs_hook=collections.OrderedDict)
+        # return config
 
     # Write configuration to .json with indentation.
     def write_json(self, config={}, config_file=__json_file):
         with open(config_file, 'w') as f:
             json.dump(config, f, indent=4)
+        self.config = config
 
     # Read default lookup directory.
-    def read_def_dir(self, config):        
+    def read_def_dir(self):        
         # Initiate default directory config if none exists.
+        config = self.config
         section = self.__section_names['dirs']
         option = 'inp lookup'
         if not section in config: config[section] = {}
@@ -52,34 +56,38 @@ class configure_runner:
             outdir = user_dialogs().set_dir_dialog(title=title)
             config[section] = {}
             config[section][option] = outdir
+            self.write_json(config=config)
 
         # Display default directory to command line.
-        fmtstr = 'Default directory to start browsing for .inp files in:\n-----\n{dir}\n'
+        fmtstr = '*Default directory to start browsing for .inp files in:\n-----\n{dir}\n'
         print(fmtstr.format(dir=config[section][option]))
-        return config
+        self.config = config
 
     # Read default subroutine locations.
-    def read_def_sub(self, config):
+    def read_def_sub(self):
         # Initate subroutine repository if none exists.
+        config = self.config
         section = self.__section_names['subs']
         if not section in config or config[section] == {}:
             config[section] = {}
             fmtstr = 'Initializing default subroutine location(s)...\n'
             print(fmtstr)
-            config = self.create_new_sub(config=config)
+            self.create_new_sub()
+            self.write_json(config=config)
 
         # Display subroutines to command line.
-        fmtstr = '\nSubroutines stored in the job runner repository for future use:\n-----'
+        fmtstr = '\n*Subroutines currently stored in the job runner repository for future use:\n-----'
         print(fmtstr)
         for id in config[section]:
             sub = config[section][id]
             fmtstr = 'Subroutine ID: {id} | File: {subfile}'.format(id=id, subfile=sub)
             print(fmtstr)
 
-        return config
+        self.config = config
 
     # Create new subroutine(s) to be added to config.
-    def create_new_sub(self, config):
+    def create_new_sub(self):
+        config = self.config
         section = self.__section_names['subs']
         while True:
             fmtstr = 'Please select a subroutine from the file explorer to be added to the job runner repository.'
@@ -92,9 +100,40 @@ class configure_runner:
             reply = raw_input(fmtstr)
             if reply.lower() != 'y':
                 break
-        return config
+        self.config = config
 
-    # Update subroutine
+    # Update existing subroutine(s) in config.
+    def update_sub(self):
+        config = self.config
+        section = self.__section_names['subs']
+        
+        # Create keys for existing subroutines.
+        fmtstr = '\nThe following subroutines can be updated:\n-----'
+        print(fmtstr)
+        for i, id in enumerate(config[section], start=1):
+            fmtstr = 'Key: {key} | Subroutine ID: {id} | File: {subfile}'.format(
+                key=i, id=id, subfile=config[section][id])
+            print(fmtstr)
+
+        # Allow user to select subroutines to be updated by key.
+        fmtstr = (
+            '\nSelect by key the subroutine you would like to update.'
+            + '\n-----\nNote:'
+            + '\n(1) Multiple subroutines can be chosen -- separate key with space'
+        )
+        print(fmtstr)
+        key = raw_input('Subroutine key(s): ').split()
+        old_subs = [config[section].keys()[int(i) - 1] for i in key]
+        for old_id in old_subs:
+            fmtstr = 'Please select a subroutine from the file explorer to replace {sub_id} in the job runner repository.'
+            print(fmtstr.format(sub_id=old_id))
+            new_sub = user_dialogs().get_sub_dialog(inidir=config['default directories'])
+            fmtstr = 'Enter a unique identifier to name this subroutine for future use: '
+            new_id = raw_input(fmtstr)
+            config[section][new_id] = config[section].pop(old_id)
+            config[section][new_id] = new_sub
+
+        self.config = config
 
     def build_job(self, inpname, subname, jobname=None, delete_mode='ON'):
         # Create job name from inp file name if none is provided.
