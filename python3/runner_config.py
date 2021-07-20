@@ -1,10 +1,9 @@
 import os
-import configparser
 import json
 
 from datetime import datetime
 
-class configure_abaqus:
+class configure_abaqus_runner:
 
     """
     Read/write config .ini files pertaining to Abaqus analyses.
