@@ -1,4 +1,5 @@
 import os
+import re
 import Tkinter as tk
 import tkFileDialog as tkdialogs
 
@@ -18,10 +19,16 @@ class user_dialogs:
 
     def get_inp_dialog(self, inidir=None):
         if inidir == None: inidir = os.getcwd()
+        fmtstr = 'Please select .inp file(s) to run.'
+        print(fmtstr)
         title = "Select input .inp file(s) to load"
         inp_files = tkdialogs.askopenfilenames(title=title, initialdir=inidir,
-            filetypes=(("Abaqus input files", "*.inp"), )
+            filetypes=(("Abaqus Output Database files", "*.inp"), )
         )
+        if type(inp_files) != list():        
+            inp_files = re.findall('\{(.*?)\}', inp_files)
+        if inp_files == []:
+            raise Exception('\nNo inp file(s) selected! Terminating...')
         return inp_files
 
     def set_dir_dialog(self, title, inidir=None):
